@@ -1,0 +1,10 @@
+/*
+* TinyMCE Icon Add
+*--------------------------------------------
+*/
+
+i.mce-ico.mce-i-my-mce-icon {
+	background-image: url('../images/pi.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
