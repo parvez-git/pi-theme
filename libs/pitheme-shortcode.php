@@ -77,7 +77,7 @@ function portfolio_section_shortcode( $atts ){ ob_start(); global $pitheme; ?>
 					<h2 class="text-center">Our Latest Works</h2>
 				</div>
 
-				<div class="work-category">
+				<div class="work-category page-filter">
 					<div class="filter" data-filter="all">Show All</div>
 
 					<?php $terms = get_terms( 'category-portfolio' );
@@ -91,7 +91,7 @@ function portfolio_section_shortcode( $atts ){ ob_start(); global $pitheme; ?>
 				</div>
 			</div>
 		</div>
-		<div id="latest_works" class="works_items">
+		<div id="latest_works" class="works_items page-items">
 
 			<?php $portfolio_item= new WP_Query(array(
 				'post_type' 		 => 'portfolio-items',

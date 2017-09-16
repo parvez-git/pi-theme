@@ -360,6 +360,9 @@ h1.page-title{
 }
 
 /* Service Area*/
+.services-area {
+    margin-bottom: 30px;
+}
 .service-items{
     margin-top: 60px;
 }
@@ -408,6 +411,9 @@ h1.page-title{
     cursor: pointer;
     color: rgb(88, 88, 88);
 }
+.work-category.page-filter .filter {
+    background-color: #f9f9f8;
+}
 
 .works_items{
 	  margin-bottom: 60px;
@@ -419,6 +425,9 @@ h1.page-title{
     margin-right: -4px;
     overflow: hidden;
     position: relative;
+}
+.works_items.page-items .mix {
+    width: 33%;
 }
 .works_items .mix:hover .overlay{
     top: 0%;
@@ -614,12 +623,12 @@ h1.page-title{
 .partner-slider{
   margin-top: 60px;
 }
-
-.slick-slide {
+.slngle_partner {
+  background-color: #f9f9f8;
   padding: 15px;
   outline: 0;
 }
-.slick-slide img {
+.slngle_partner img {
 	max-width: 100%;
   margin: auto;
 }
