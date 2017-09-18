@@ -27,7 +27,6 @@
 				?>
 	      <a class="navbar-brand <?php echo $logotype; ?>" href="<?php bloginfo( 'url' ); ?>">
 					<?php
-						global $pitheme;
 						if ($pitheme['opt-media-logo']['url']) { ?>
 							<img src="<?php echo $pitheme['opt-media-logo']['url']; ?>" alt="<?php bloginfo( 'name' ); ?>" height="40px"/>
 						<?php }else{
