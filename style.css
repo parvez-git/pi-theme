@@ -135,7 +135,9 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Montserrat', sans-serif;
   color: rgb(51,51,51);
 }
-
+a.navbar-brand.logoimage{
+  padding: 5px 0;
+}
 .navbar-nav>li>a{
   font-family: 'Montserrat', sans-serif;
 }

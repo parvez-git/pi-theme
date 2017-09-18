@@ -17,11 +17,19 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>">
+				<?php
+					global $pitheme;
+					if ($pitheme['opt-media-logo']['url']) {
+						$logotype = 'logoimage';
+					}else{
+						$logotype = 'logotext';
+					}
+				?>
+	      <a class="navbar-brand <?php echo $logotype; ?>" href="<?php bloginfo( 'url' ); ?>">
 					<?php
 						global $pitheme;
-						if ($pitheme['opt-media-logo']['thumbnail']) { ?>
-							<img src="<?php echo $pitheme['opt-media-logo']['thumbnail']; ?>" alt="<?php bloginfo( 'name' ); ?>" height="40px"/>
+						if ($pitheme['opt-media-logo']['url']) { ?>
+							<img src="<?php echo $pitheme['opt-media-logo']['url']; ?>" alt="<?php bloginfo( 'name' ); ?>" height="40px"/>
 						<?php }else{
 							bloginfo( 'name' );
 						}
